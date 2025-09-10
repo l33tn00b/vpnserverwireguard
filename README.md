@@ -89,7 +89,8 @@ END
 ```
 
 # Make sure TCP gets told about the MTU
-Just in case our clients don't get ICMP messages (maybe because we didn't allow these in our firewall rules)
+Just in case our clients don't get ICMP messages (maybe because we didn't allow these in our firewall rules)  
+
 insert into `/etc/ufw/after.rules` just before the last `COMMIT`, right after `don't log noisy broadcasts`: 
 
 ```
