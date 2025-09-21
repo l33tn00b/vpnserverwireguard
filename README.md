@@ -39,6 +39,7 @@ systemctl start wg-quick@wg0 && sudo systemctl enable wg-quick@wg0
 firewall
 ```
 ufw allow 51820/udp
+ufw allow OpenSSH
 ufw reload
 ```
 
